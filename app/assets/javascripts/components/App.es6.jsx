@@ -14,7 +14,7 @@ class App extends React.Component {
       this.setState({
         movie
       })
-      console.log(this.state.movie.imdbID)
+      console.log(this.state.movie)
     }.bind(this))
   }
 
@@ -27,6 +27,7 @@ class App extends React.Component {
         />
         <MovieData
           key={this.state.movie.imdbID}
+          data={this.state.movie}
         />
       </div>
     )
